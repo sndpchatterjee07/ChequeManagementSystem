@@ -1,0 +1,103 @@
+#SundryDataInsertFormWrapper {
+	position:absolute;
+	width:657px;
+	height:321px;
+	z-index:1;
+	left: 111px;
+	top: 141px;
+}
+.SundryDataInsert-form-block {
+    float:left;
+    margin:0 10px 10px 0;
+    text-align:center;
+    width:260px;
+}
+.SundryDataInsert-form-block form {
+	position:absolute; /* Testing */
+	-moz-border-radius:5px;
+	-moz-box-shadow:0 0 10px #333;
+	-webkit-border-radius: 15px;
+	-webkit-box-shadow: 0 0 10px #333;
+	border:3px solid white;
+	/*padding:26px;*/
+	left: 5px;
+	/*top: 13px;*/
+	width: 643px;
+	height: 287px;
+}
+form.sundrydatainsert_form{
+	position:absolute;
+	background-color: #FF9900;
+	width:628px;
+	float: left;
+	text-align: right;
+	margin-right: 6px;
+	margin-top:2px;
+	height: 187px;
+}
+form.sundrydatainsert_form legend
+{
+	color: #FFFFFF;
+    padding:1px;
+    margin-left: 14px;
+    font-weight:bold;
+    font-size: 14px;
+    font-weight:100;
+}
+form.sundrydatainsert_form fieldset.row1 label{
+    color: #FFFFFF;
+    width:110px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+	
+	font-family:Palatino Linotype;
+    font-size:10px;
+	font-weight:bold;
+}
+form.sundrydatainsert_form input{
+    width: 140px;
+    color: #505050;
+    float: left;
+    margin-right: 5px;
+}
+form.sundrydatainsert_form input[type=text]
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+	
+	font-family:Palatino Linotype;
+    font-size:12px;
+}
+
+/*  Row 2 Styles */
+form.sundrydatainsert_form fieldset.row2 label{
+    color: #FFFFFF;
+    width:110px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+	
+	font-family:Palatino Linotype;
+    font-size:10px;
+	font-weight:bold;
+}
+
+.button
+{
+    background: #3BB9FF url(images/overlay.png) repeat-x;
+    /*padding: 8px 10px 8px;*/
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    float:right;
+    font-size:10px;
+    /*margin:10px;*/
+}

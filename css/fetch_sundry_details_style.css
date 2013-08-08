@@ -1,0 +1,44 @@
+#DisplayWrapper {
+	position:absolute;
+	width:591px;
+	height:341px;
+	z-index:1;
+	left: 104px;
+	top: 218px;
+}
+#DisplaySundryDetailsTable{
+    table-layout:auto;
+	width:600px;
+	color:#FFFFFF;
+	font-size:10px;
+	
+	
+	border: 1px solid #e3e3e3;
+	background-color: #FF9900;
+	border-radius: 6px;
+	/*-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;*/
+}
+#DisplaySundryDetailsTable th {
+	font-weight:bold;
+	padding: 5px;
+	color:#6E6E6E;
+}
+#DisplaySundryDetailsTable td{
+ 	color:#FFFFFF;
+	text-align:right;
+ }
+#SearchWrapper {
+	position:absolute;
+	width:186px;
+	height:70px;
+	z-index:1;
+	left: 711px;
+	top: 138px;
+	color:#FFFFFF;
+}
+#companyId{
+	font-family:Verdana ;
+    font-size:10px;
+	font-style:italic;
+}

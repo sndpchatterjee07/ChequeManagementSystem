@@ -1,0 +1,44 @@
+#SearchWrapper {
+	position:absolute;
+	width:228px;
+	height:70px;
+	z-index:1;
+	left: 704px;
+	top: 140px;
+	color:#FFFFFF;
+}
+#DisplayWrapper {
+	position:absolute;
+	width:591px;
+	height:269px;
+	z-index:1;
+	left: 94px;
+	top: 222px;
+}
+#DisplayBankDetailsTable{
+	table-layout:auto;
+	width:600px;
+	color:#FFFFFF;
+	font-size:10px;
+	
+	
+	border: 1px solid #e3e3e3;
+	background-color: #FF9900;
+	border-radius: 6px;
+	/*-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;*/
+}
+#DisplayBankDetailsTable th {
+	font-weight:bold;
+	padding: 5px;
+	color:#6E6E6E;
+}
+#DisplayBankDetailsTable td{
+ 	color:#FFFFFF;
+	text-align:right;
+ }
+ #ifsc_code{
+	font-family:Verdana ;
+    font-size:10px;
+	font-style:italic;
+}

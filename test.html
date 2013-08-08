@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Report Generator</title>
+<link rel="shortcut icon" href="cheque.ico" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {  
+	 
+    //select all the a tag with name equal to modal
+    $('a[name=modal]').click(function(e) {
+        //Cancel the link behavior
+        e.preventDefault();
+        //Get the A tag
+        var id = $(this).attr('href');
+     
+        //Get the screen height and width
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+     
+        //Set height and width to mask to fill up the whole screen
+        $('#mask').css({'width':maskWidth,'height':maskHeight});
+         
+        //transition effect     
+        $('#mask').fadeIn(1000);    
+        $('#mask').fadeTo("slow",0.8);  
+     
+        //Get the window height and width
+        var winH = $(window).height();
+        var winW = $(window).width();
+               
+        //Set the popup window to center
+        $(id).css('top',  winH/2-$(id).height()/2);
+        $(id).css('left', winW/2-$(id).width()/2);
+     
+        //transition effect
+        $(id).fadeIn(2000); 
+     
+    });
+     
+    //if close button is clicked
+    $('.window .close').click(function (e) {
+        //Cancel the link behavior
+        e.preventDefault();
+        $('#mask, .window').hide();
+    });     
+     
+    //if mask is clicked
+    $('#mask').click(function () {
+        $(this).hide();
+        $('.window').hide();
+    });         
+     
+});
+</script>
+<style type="text/css">
+
+/* Z-index of #mask must lower than #boxes .window */
+#mask {
+  position:absolute;
+  z-index:9000;
+  background-color:#424242;
+  
+  display:none;
+}
+#boxes .window {
+  position:fixed;
+  width:400px;
+  height:180px;
+  display:none;
+  z-index:9999;
+  padding:15px;
+}
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+  width:400px; 
+  height:180px;
+  
+  background-color:white;
+  font-family:Verdana ;
+  font-size:10px;
+  font-weight:bold;
+  
+}
+
+
+
+
+#FormWrapper {
+	position:absolute;
+	width:670px;
+	height:307px;
+	z-index:9999;
+	left: 10px;
+	top: 50px;
+}
+.ReportGenerator-form-block {
+    float:left;
+    margin:0 10px 10px 0;
+    text-align:center;
+    width:260px;
+}
+.ReportGenerator-form-block form {
+	position:absolute; 
+	-moz-border-radius:5px;
+	-moz-box-shadow:0 0 10px #333;
+	-webkit-border-radius: 15px;
+	-webkit-box-shadow: 0 0 10px #333;
+	border:3px solid white;
+	
+	left: 5px;
+	
+	width: 600px;
+	height: 250px;
+}
+form.reportGenerator_form{
+	position:absolute;
+	background-color: #FF9900;
+	width:400px;
+	float: left;
+	text-align: right;
+	margin-right: 6px;
+	margin-top:2px;
+	height: 140px;
+}
+form.reportGenerator_form legend
+{
+	color: #FFFFFF;
+    padding:1px;
+    margin-left: 14px;
+    font-weight:bold;
+    font-size: 14px;
+    font-weight:100;
+}
+form.reportGenerator_form fieldset.row1 label{
+    color: #FFFFFF;
+    width:110px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+	
+	font-family:Palatino Linotype;
+    font-size:10px;
+	font-weight:bold;
+}
+.button
+{
+    background: #3BB9FF url("images/overlay.png") repeat-x;
+    /*padding: 8px 10px 8px;*/
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    float:right;
+    font-size:10px;
+    /*margin:10px;*/
+}
+</style>
+</head>
+<body>
+<a href="#dialog" name="modal">Click here to proceed to Report Generator </a>
+<div id="boxes">
+    <!-- #customize your modal window here -->
+    <div id="dialog" class="window">
+        <b><a href="#" class="close" style="float:right">Close Window</a></b>
+        <div id="FormWrapper">
+        		<div class="ReportGenerator-form-block">
+        			<form name="reportGenerator_form" class="reportGenerator_form" action="reportGenerate.php" method="post">
+        					<fieldset class="row1">
+       							<legend align="center">Query to be executed :</legend>
+       							<p>
+       							<label>SQL Query:</label>
+		        				<select name="sql_query" class="sql_query">
+		        					<OPTION value="Select" selected>-- Select an appropriate SQL Query --</OPTION>
+		        					<OPTION value="SELECT * FROM group_master">SELECT * FROM group_master</OPTION>
+		        					<OPTION value="SELECT * FROM user_master">SELECT * FROM user_master</OPTION>
+		        					<OPTION value="SELECT * FROM bank_master">SELECT * FROM bank_master</OPTION>
+		        					<OPTION value="SELECT * FROM cheque_master">SELECT * FROM cheque_master</OPTION>
+		        					<OPTION value="SELECT * FROM sundry_info_master">SELECT * FROM sundry_info_master</OPTION>
+	         					</select>
+        						</p>		
+        					</fieldset>
+        					<p align="right">
+							   <button class="button">Generate Report &raquo;</button>
+		  					</p> 
+        			</form>
+        		</div>
+        </div>
+    </div>
+    <!-- Do not remove div#mask, because you'll need it to fill the whole screen --> 
+    <div id="mask"></div>
+</div>
+</body>
+</html>

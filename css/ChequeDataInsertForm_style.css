@@ -1,0 +1,103 @@
+#ChequeDataInsertFormWrapper {
+	position:absolute;
+	width:646px;
+	height:307px;
+	z-index:1;
+	left: 111px;
+	top: 141px;
+}
+.ChequeDataInsert-form-block {
+    float:left;
+    margin:0 10px 10px 0;
+    text-align:center;
+    width:260px;
+}
+.ChequeDataInsert-form-block form {
+	position:absolute; /* Testing */
+	-moz-border-radius:5px;
+	-moz-box-shadow:0 0 10px #333;
+	-webkit-border-radius: 15px;
+	-webkit-box-shadow: 0 0 10px #333;
+	border:3px solid white;
+	/*padding:26px;*/
+	left: 5px;
+	/*top: 13px;*/
+	width: 643px;
+	height: 287px;
+}
+form.chequedatainsert_form{
+	position:absolute;
+	background-color: #FF9900;
+	width:645px;
+	float: left;
+	text-align: right;
+	margin-right: 6px;
+	margin-top:2px;
+	height: 275px;
+}
+form.chequedatainsert_form legend
+{
+	color: #FFFFFF;
+    padding:1px;
+    margin-left: 14px;
+    font-weight:bold;
+    font-size: 14px;
+    font-weight:100;
+}
+form.chequedatainsert_form fieldset.row1 label{
+    color: #FFFFFF;
+    width:110px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+	
+	font-family:Palatino Linotype;
+    font-size:10px;
+	font-weight:bold;
+}
+form.chequedatainsert_form input{
+    width: 140px;
+    color: #505050;
+    float: left;
+    margin-right: 5px;
+}
+form.chequedatainsert_form fieldset.row2 label{
+    color: #FFFFFF;
+    width:110px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+	
+	font-family:Palatino Linotype;
+    font-size:10px;
+	font-weight:bold;
+}
+.button
+{
+    background: #3BB9FF url("images/overlay.png") repeat-x;
+    /*padding: 8px 10px 8px;*/
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    float:right;
+    font-size:10px;
+    /*margin:10px;*/
+}
+/* HOVER STYLES */
+div#pop-up {
+  display: none;
+  position: absolute;
+  width: 280px;
+  /* padding: 10px; */
+  /* background: #eeeeee; */
+  color: #000000;
+  border: 0px solid #1a1a1a;
+  font-size: 90%;
+}

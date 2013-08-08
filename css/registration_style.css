@@ -1,0 +1,193 @@
+/* CSS Document */
+#RegistrationFormWrapper {
+	position:absolute;
+	width:740px;
+	height:470px;
+	z-index:1;
+	left: 125px;
+	top: 55px;
+}
+.registration-form-block {
+    float:left;
+    margin:0 10px 10px 0;
+    text-align:center;
+    width:260px;
+}
+.registration-form-block form {
+	position:absolute; /* Testing */
+    -moz-border-radius:15px;
+    -moz-box-shadow:0 0 10px #333;
+    -webkit-border-radius: 15px;
+    -webkit-box-shadow: 0 0 10px #333;
+	border:3px solid white;
+	padding:26px;
+	left: 6px;
+	top: 30px;
+	width: 643px;
+	height: 287px;
+}
+form.register{
+	position:absolute;
+	background-color: #FF9900;
+	width:700px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+}
+form.register legend
+{
+	color: #FFFFFF;
+    padding:1px;
+    margin-left: 14px;
+    font-weight:bold;
+    font-size: 14px;
+    font-weight:100;
+}
+form.register fieldset.row1 label{
+    color: #FFFFFF;
+    width:150px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+	
+	font-family:Palatino Linotype;
+    font-size:10px;
+	font-weight:bold;
+}
+form.register input{
+    width: 140px;
+    color: #505050;
+    float: left;
+    margin-right: 5px;
+}
+form.register input[type=text]
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+	
+	font-family:Palatino Linotype;
+    font-size:10px;
+}
+form.register input[type=password]
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+}
+form.register label.obinfo{
+    float:right;
+    padding:3px;
+    font-style:italic;
+}
+/*  Row 2 Styles */
+form.register fieldset.row2 label{
+    color: #FFFFFF;
+    width:110px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+	
+	font-family:Palatino Linotype;
+    font-size:10px;
+	font-weight:bold;
+}
+form.register label.gender{
+    margin-top:-1px;
+    margin-bottom:2px;
+    width:34px;
+    float:left;
+    text-align:left;
+    line-height:19px;
+}
+form.register input[type=radio]
+{
+    float:left;
+    width:15px;
+}
+form.register select
+{
+    border: 1px solid #E1E1E1;
+    width: 100px;
+    float:left;
+    margin-bottom:3px;
+    color: #505050;
+    margin-right:5px;
+}
+form.register select.date
+{
+    width: 40px;
+	font-family:Palatino Linotype;
+    font-size:10px;
+}
+form.register select.month
+{
+    width: 70px;
+	font-family:Palatino Linotype;
+    font-size:10px;
+}
+form.register input.birthdate
+{
+    width: 40px;
+}
+form.register input.year
+{
+    width: 35px;
+}
+
+/* Row 3 Styles */
+
+form.register fieldset.row3 label{
+    color: #FFFFFF;
+    width:150px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+	
+	font-family:Palatino Linotype;
+    font-size:10px;
+	font-weight:bold;
+}
+
+/* Row 4 Styles */
+
+form.register fieldset.row4 label{
+    color: #FFFFFF;
+    width:150px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;
+	font-family:Palatino Linotype;
+    font-size:10px;
+	font-weight:bold;
+}
+input:focus, select:focus{
+    background-color:	#FFCCCC;
+}
+p.agreement{
+    margin-left:15px;
+}
+p.agreement label{
+    width:390px;
+    text-align:left;
+    margin-top:3px;
+}
+.button
+{
+    background: #3BB9FF url(images/overlay.png) repeat-x;
+    /*padding: 8px 10px 8px;*/
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    cursor: pointer;
+    float:right;
+    font-size:10px;
+    /*margin:10px;*/
+}

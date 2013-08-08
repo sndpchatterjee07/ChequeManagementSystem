@@ -1,0 +1,100 @@
+/* CSS Document */
+#MainPage{
+  position:absolute;
+  width:1024px;
+  height:768;
+  z-index:1;
+  
+  background-image: url("../images/Grey-website-background.jpg");
+}
+#HeaderPageWrapper {
+	position:absolute;
+	width:1014px;
+	height:178px;
+	z-index:1;
+	left: 5px;
+	top: 4px;
+}
+#MainPageWrapper {
+	position:absolute;
+	width:1014px;
+	height:451px;
+	z-index:1;
+	left: 5px;
+	top: 189px;
+}
+#FooterPageWrapper{
+	position:absolute;
+	width:1014px;
+	height:115px;
+	z-index:1;
+	left: 4px;
+	top: 648px;
+}
+#LoginFormWrapper {
+	position:absolute;
+	width:341px;
+	height:307px;
+	z-index:1;
+	left: 580px;
+	top: 73px;
+}
+#LeftColumn {
+	position:absolute;
+	width:519px;
+	height:259px;
+	z-index:1;
+	left: 109px;
+	top: 96px;
+}
+form.loginform{
+	background-color: #FF9900;
+	/*position:absolute;
+	width:700px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top:2px;*/
+}
+.login-block {
+    float:left;
+    margin:0 10px 10px 0;
+    text-align:center;
+    width:260px;
+}
+.login-block form {
+	position:absolute; /* Testing */
+    -moz-border-radius:15px;
+    -moz-box-shadow:0 0 10px #333;
+    -webkit-border-radius: 15px;
+    -webkit-box-shadow: 0 0 10px #333;
+	border:2px solid white;
+	padding:20px;
+	left: 6px;
+	top: 30px;
+	width: 276px;
+	height: 205px;
+}
+.login-block label {
+    /*color:#7C6767;*/
+	color:#FFFFFF;
+	font-family:Palatino Linotype;
+    font-size:14px;
+}
+.login-block input[type="text"], .login-block input[type="password"] {
+    border-color:#EEEEEE #CCCCCC #CCCCCC #EEEEEE;
+    border-right:1px solid #CCCCCC;
+    border-style:solid;
+    border-width:1px;
+	font-family:Palatino Linotype;
+    font-size:14px;
+    margin:0 0 20px;
+    padding:5px;
+    width:250px;
+}
+.login-block a.button {
+    text-decoration:none;
+}
+.login-block input[type="text"]:focus, .login-block input[type="password"]:focus {
+    border-color:#555555;
+}

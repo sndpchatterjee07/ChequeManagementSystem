@@ -1,0 +1,62 @@
+#DisplayWrapper {
+	position:absolute;
+	width:591px;
+	height:269px;
+	z-index:1;
+	left: 94px;
+	top: 207px;
+}
+#DisplayChequeDetailsTable{
+	table-layout:auto;
+	width:600px;
+	color:#FFFFFF;
+	font-size:10px;
+	
+	
+	border: 1px solid #e3e3e3;
+	background-color: #FF9900;
+	border-radius: 6px;
+	/*-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;*/
+}
+#DisplayChequeDetailsTable th {
+	font-weight:bold;
+	padding: 5px;
+	color:#6E6E6E;
+}
+#DisplayChequeDetailsTable td{
+ 	color:#FFFFFF;
+	text-align:right;
+/* 	font-weight: bold; */
+	
+}
+#DisplayLimitWrapper {
+	position:absolute;
+	width:176px;
+	height:58px;
+	z-index:1;
+	left: 508px;
+	top: 140px;
+}
+#SearchWrapper {
+	position:absolute;
+	width:186px;
+	height:70px;
+	z-index:1;
+	left: 711px;
+	top: 138px;
+	color:#FFFFFF;
+}
+#searchFormErrorMsg {
+	position:absolute;
+	width:184px;
+	height:25px;
+	z-index:1;
+	left: 2px;
+	top: -29px;
+}
+#chqNo{
+	font-family:Verdana ;
+    font-size:10px;
+	font-style:italic;
+}
